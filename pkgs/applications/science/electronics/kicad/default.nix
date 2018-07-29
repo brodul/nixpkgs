@@ -12,11 +12,11 @@ assert ngspiceSupport -> libngspice != null;
 with lib;
 stdenv.mkDerivation rec {
   name = "kicad-${version}";
-  series = "5";
+  series = "5.0";
   version = "5.0.0";
 
   src = fetchurl {
-    url = "https://code.launchpad.net/kicad/${series}/${version}/+download/kicad-${version}.tar.xz";
+    url = "https://launchpad.net/kicad/${series}/${version}/+download/kicad-${version}.tar.xz";
     sha256 = "17nqjszyvd25wi6550j981whlnb1wxzmlanljdjihiki53j84x9p";
   };
 
